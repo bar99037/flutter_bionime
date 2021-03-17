@@ -12,25 +12,29 @@ class HomePage extends StatelessWidget{
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+          title: Text('title').tr(),
           actions: [
             Padding(padding: EdgeInsets.all(8.w),
-              child: DropdownButton<Language>(
+              child: PopupMenuButton<Language>(
+                key: Key('languageButton'),
                 icon: Icon(
                     Icons.language,
                     color: Colors.white
                 ),
-                onChanged: (Language language){
+                onSelected: (Language language){
                   context.setLocale(language.locale);
                 },
-                items: languages.map<DropdownMenuItem<Language>>(
-                        (e) => DropdownMenuItem<Language>(
-                      value: e,
-                      child: Text(
-                          e.name,
-                          style: TextStyle(fontSize: 20.sp)
-                      ),
-                    )
-                ).toList(),
+                itemBuilder: (context){
+                  return languages.map<PopupMenuItem<Language>>(
+                          (e) => PopupMenuItem<Language>(
+                        value: e,
+                        child: Text(
+                            e.name,
+                            style: TextStyle(fontSize: 20.sp)
+                        ),
+                      )
+                  ).toList();
+                },
               ),
             )
           ],
