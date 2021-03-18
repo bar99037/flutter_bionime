@@ -1,3 +1,5 @@
 {
-  "title": "BIONIME 面試題目"
+  "title": "BIONIME 面試題目",
+  "daily_load_fail": "無法加載每日一句",
+  "reload": "重新加載"
 }

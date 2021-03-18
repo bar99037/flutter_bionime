@@ -78,6 +78,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.2"
+  daily_repository:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: master
+      resolved-ref: b1fee03f00297120e8cf9a0573e4c2a0ce255f4f
+      url: "https://github.com/bar99037/daily_repository.git"
+    source: git
+    version: "0.0.1"
   dio:
     dependency: "direct main"
     description:
@@ -363,7 +372,7 @@ packages:
     source: hosted
     version: "1.3.0"
   universal_html:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: universal_html
       url: "https://pub.dartlang.org"

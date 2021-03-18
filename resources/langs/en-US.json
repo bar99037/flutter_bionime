@@ -1,3 +1,5 @@
 {
-  "title": "BIONIME interview questions"
+  "title": "BIONIME interview questions",
+  "daily_load_fail": "can't load daily",
+  "reload": "reload"
 }
