@@ -1,16 +1,7 @@
 # flutter_bionime
 
-bionime test
+flutter_bionime是一個整合每日一句以及藥局口罩庫存查詢的App
 
-## Getting Started
+## 畫面展示
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![GITHUB](https://i.imgur.com/d5TIIaV.jpg "p1")
