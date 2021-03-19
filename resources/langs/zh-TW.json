@@ -1,5 +1,9 @@
 {
-  "title": "BIONIME 面試題目",
+  "title": "口罩庫存查詢",
+  "daily": "每日一句",
   "daily_load_fail": "無法加載每日一句",
-  "reload": "重新加載"
+  "reload": "重新加載",
+  "pharmaices_load_fail": "無法加載口罩資料",
+  "child": "兒童",
+  "adult": "成人"
 }

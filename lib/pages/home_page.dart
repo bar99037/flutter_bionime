@@ -3,14 +3,18 @@ import 'dart:ui';
 import 'package:daily_repository/daily_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:flutter_bionime/pages/daily/bloc/daily_bloc.dart';
-import 'package:flutter_bionime/pages/daily/daily_view.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_bionime/model/Language.dart';
 import 'package:flutter_bionime/model/Locales.dart';
+import 'package:pharmacies_repository/pharmacies_repository.dart';
 
+import 'daily/bloc/daily_bloc.dart';
 import 'daily/bloc/daily_event.dart';
+import 'daily/daily_view.dart';
+import 'pharmaices/bloc/pharmacies_bloc.dart';
+import 'pharmaices/bloc/pharmacies_event.dart';
+import 'pharmaices/pharmaices_view.dart';
 
 class HomePage extends StatelessWidget{
   @override
@@ -46,22 +50,22 @@ class HomePage extends StatelessWidget{
           ],
         ),
         body: Container(
-          color: Colors.white,
+          width: double.infinity,
+          color: Color(0XFFD0D0D0),
           child: Column(
             children: [
-              Flexible(
-                  child: Container(
-                      width: 0.7.sw,
-                      child: BlocProvider(
-                          create: (_) => DailyBloc(dailyRepository: DailyRepository())..add(DailyRequested()),
-                          child: DailyView()
-                      )
+              Container(
+                  margin: EdgeInsets.symmetric(vertical: 20.w),
+                  child: BlocProvider(
+                      create: (_) => DailyBloc(dailyRepository: DailyRepository())..add(DailyRequested()),
+                      child: DailyView()
                   )
               ),
-              Divider(color: Colors.black45,thickness: 2.w),
               Flexible(
-                flex: 3,
-                child: Container(),
+                child: BlocProvider(
+                  create: (_) => PharmaciesBloc(pharmaciesRepository: PharmaciesRepository())..add(PharmaciesRequested()),
+                  child: PharmaicesView()
+                )
               )
             ],
           ),

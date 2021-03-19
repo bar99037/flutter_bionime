@@ -1,5 +1,9 @@
 {
-  "title": "BIONIME interview questions",
+  "title": "Mask inventory query",
+  "daily": "Daily",
   "daily_load_fail": "can't load daily",
-  "reload": "reload"
+  "reload": "reload",
+  "pharmaices_load_fail": "can't load pharmaices data",
+  "child": "child",
+  "adult": "adult"
 }

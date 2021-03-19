@@ -1,5 +1,9 @@
 {
-  "title": "BIONIME 面试题目",
+  "title": "口罩库存查询",
+  "daily": "每日一句",
   "daily_load_fail": "无法加载每日一句",
-  "reload": "重新加载"
+  "reload": "重新加载",
+  "pharmaices_load_fail": "無法加載口罩資料",
+  "child": "儿童",
+  "adult": "成人"
 }
